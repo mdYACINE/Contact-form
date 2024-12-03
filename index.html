@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Contact form</title>
+
+
+</head>
+<body>
+  <div class="sentBox hide">
+    <div>
+      <img src="assets/images/icon-success-check.svg" alt="">
+      <h3>Message Sent!</h3>
+    </div>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+    
+ <div class="container">
+  
+  <h2>Contact Us</h2>
+  <form action="">
+    <div class="name">
+      <label for="fname"><p>First Name <span>*</span></p> </label>
+      <input id="fname" type="text">
+      <p class="error"></p>
+    </div>
+    <div class="name">
+      <label for="lname"><p>Last Name <span>*</span></p></label>
+      <input id="lname" type="text">
+      <p class="error"></p>
+    </div>
+    
+    
+    <label class="email" for="email"><p>Email Address <span>*</span></p></label>
+    <input class="email" id="email" type="text">
+    
+    <p class="email error"></p>
+
+
+    <label for=""><p>Query Type <span>*</span></p></label><br>
+
+    <div class="radio" id="select1">
+      <input style="accent-color: hsl(169, 82%, 27%);" name="r" id="r1" type="radio" onclick="color(select1,select2)">
+      <label for="r1" onclick="color(select1,select2)">General Enquiry</label>
+    </div>
+
+    <div class="radio" id="select2">
+      <input  style="accent-color: hsl(169, 82%, 27%);" name="r" id="r2" type="radio" onclick="color(select2,select1)">
+      <label for="r2" onclick="color(select2,select1)">Support Request</label>
+    </div>
+    <p class="error"></p>
+
+    <label class="mess" for="mess"><p>Message <span>*</span></p></label>
+    <textarea class="mess"  id="mess"></textarea>
+    <p class="error"></p>
+
+    <div class="checkbox">
+      <input style="accent-color: hsl(169, 82%, 27%);" id="check" type="checkbox">
+      <label for="check"><p>I consent to being contacted by the team <span>*</span></p></label>
+    </div>
+    <p class="checkbox error"></p>
+
+    <button id="btn">Submit</button>
+  </form>
+  
+
+ </div>
+
+
+ <script src="script.js"></script>
+</body>
+</html>
